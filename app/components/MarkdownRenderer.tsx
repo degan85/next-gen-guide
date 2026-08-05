@@ -49,8 +49,8 @@ export default function MarkdownRenderer({ content }: { content: string }) {
           );
         },
         table: ({ children }) => (
-          <div className="overflow-x-auto mb-3 -mx-4 sm:mx-0">
-            <table className="w-full text-xs sm:text-sm min-w-[400px]">
+          <div className="overflow-x-auto mb-3">
+            <table className="w-full text-xs sm:text-sm">
               {children}
             </table>
           </div>

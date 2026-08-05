@@ -35,8 +35,10 @@ export function Section({
         </span>
       </button>
       {open && (
-        <div className="mt-2 sm:mt-3 px-4 sm:px-6 py-4 sm:py-5 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)]">
-          {children}
+        <div className="mt-2 sm:mt-3 px-3 sm:px-6 py-3 sm:py-5 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] overflow-hidden">
+          <div className="min-w-0 overflow-x-auto">
+            {children}
+          </div>
         </div>
       )}
     </section>
