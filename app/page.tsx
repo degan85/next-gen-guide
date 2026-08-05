@@ -7,6 +7,7 @@ import {
   CodeBlock,
   Badge,
 } from "./components/Section";
+import AuthGate from "./components/AuthGate";
 
 const NAV = [
   { id: "overview", icon: "🏗️", label: "아키텍처 개요" },
@@ -21,6 +22,7 @@ const NAV = [
 
 export default function Home() {
   return (
+    <AuthGate>
     <div className="flex min-h-screen">
       {/* Sidebar */}
       <nav className="hidden lg:flex flex-col w-64 fixed top-0 left-0 h-full bg-[var(--card-bg)] border-r border-[var(--card-border)] p-6 gap-1 z-10">
@@ -564,5 +566,6 @@ PK: {PREFIX}_NanoId14자  →  VARCHAR(25)`}
         </div>
       </main>
     </div>
+    </AuthGate>
   );
 }
