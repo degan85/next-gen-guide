@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Windows 복사 시 생기는 메타 파일
+*Zone.Identifier
